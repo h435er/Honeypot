@@ -2,7 +2,6 @@
 Description=honeypot
 Type=simple
 Restart=always
-RestartSec=1000000
 ExecStart=/home/odroid/honey.sh
 
 [Install]
