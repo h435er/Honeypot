@@ -1,0 +1,9 @@
+[Unit]
+Description="Timer for honey.service"
+
+[Timer]
+Unit=honey.service
+OnCalendar=hourly
+Persistens=true
+[Install]
+WantedBy=multi-user.target
