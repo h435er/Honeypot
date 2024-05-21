@@ -6,7 +6,7 @@ for ip in $expected_ip; do
     if grep -q "$ip" <<< "$arp_output"; then
       echo "Allright" >> log.txt
     else
-      curl -d "INVADER" ntfy.sh/honey
+      curl -d "INVADER" ntfy.sh/CHANGE-THIS
       echo "INVADER" >> log.txt
     fi
 done
