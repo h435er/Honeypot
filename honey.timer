@@ -1,9 +1,0 @@
-[Unit]
-Description="Timer for honey.service"
-
-[Timer]
-Unit=honey.service
-OnCalendar=1h
-Persistens=true
-[Install]
-WantedBy=multi-user.target
