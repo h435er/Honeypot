@@ -1,8 +1,10 @@
 [Unit]
 Description=honeypot
+
+[Service]
 Type=simple
 Restart=always
-ExecStart=/home/odroid/honey.sh
+ExecStart=/usr/bin/python3 /home/raspi/honey.py
 
 [Install]
 WantedBy=multi-user.target
