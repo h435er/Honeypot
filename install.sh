@@ -25,6 +25,9 @@ chmod +x honey.sh
 echo "now place your username in there in the ExecStart line"
 sleep 3
 sudo nano /etc/systemd/system/honey.service
+echo 'place in your ntfy acc'
+sleep 3
+sudo nano /home/$USER/honey.sh
 echo "starting honey service ..."
 sudo systemctl enable --now honey
 echo """
