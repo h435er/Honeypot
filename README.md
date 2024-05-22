@@ -1,8 +1,8 @@
 # What you need
->ntfy as an app
+>ntfy (an notification app)
 
->a linux pc
-# About
+>Linux pc/server
+# About/Usage
 This is a simple ip-scanner. you put in the ```honey.sh``` your ip addresses in there and it will ignore them while scanning. if there is anything sus, it will send you a message with ntfy
 
 # Install
