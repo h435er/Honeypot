@@ -12,4 +12,5 @@ cd Honeypot
 chmod +x install.sh
 ./install.sh
 ```
-
+# Uninstall
+run the ```uninstall.sh``` programm. all honey files will be removed automatically
