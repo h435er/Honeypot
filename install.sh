@@ -24,10 +24,10 @@ cd
 echo "MARK THE SHELL SCRIPT AS EXECUTABLE ..."
 chmod +x honey.sh
 echo "NOW PLACE YOUR USERNAME IN THE EXECSTART LINE"
-sleep 3
+sleep 5
 sudo nano /etc/systemd/system/honey.service
 echo 'NOW PLACE YOUR NTFY ACCOUNT SUBSCRIPTION THERE'
-sleep 3
+sleep 5
 sudo nano /home/$USER/honey.sh
 echo "ENABLE AND START HONEY SERVICE ..."
 sudo systemctl enable --now honey
