@@ -22,6 +22,9 @@ sudo mv honey.sh /home/$USER/
 cd
 echo "mark the shell script as executable ..."
 chmod +x honey.sh
+echo "now place your username in there in the ExecStart line"
+sleep 3
+sudo nano /etc/systemd
 echo "starting honey service ..."
 sudo systemctl enable --now honey
 echo """
