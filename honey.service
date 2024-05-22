@@ -4,7 +4,7 @@ Description=honeypot
 [Service]
 Type=simple
 Restart=always
-ExecStart=/usr/bin/python3 $HOME/honey.py
+ExecStart=/usr/bin/python3 %h/honey.py
 
 [Install]
 WantedBy=multi-user.target
