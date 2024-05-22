@@ -2,33 +2,34 @@
 echo """
 
 
-                              
-  /\  /\___  _ __   ___ _   _ 
- / /_/ / _ \| '_ \ / _ \ | | |
-/ __  / (_) | | | |  __/ |_| |
-\/ /_/ \___/|_| |_|\___|\__, |
-                        |___/ 
+ _                              _           _        _ _ 
+| |__   ___  _ __   ___ _   _  (_)_ __  ___| |_ __ _| | |
+| '_ \ / _ \| '_ \ / _ \ | | | | | '_ \/ __| __/ _` | | |
+| | | | (_) | | | |  __/ |_| | | | | | \__ \ || (_| | | |
+|_| |_|\___/|_| |_|\___|\__, | |_|_| |_|___/\__\__,_|_|_|
+                        |___/                            
+
 
 
  
 """
 
-echo "moving the service file to /etc/systemd/system/ ..."
+echo "MOVING THE SERVICE FILE TO  /etc/systemd/system/ ..."
 sudo mv honey.service /etc/systemd/system/
-echo "moving the py script in the home directory ..."
+echo "MOVING THE PY SCRIPT IN THE HOME DIRECTORY ..."
 sudo mv honey.py /home/$USER/
-echo "moving the shell script in the home directory ..."
+echo "MOVING THE SHELL SCRIPT IN THE HOME DIRECTORY ..."
 sudo mv honey.sh /home/$USER/
 cd
-echo "mark the shell script as executable ..."
+echo "MARK THE SHELL SCRIPT AS EXECUTABLE ..."
 chmod +x honey.sh
-echo "now place your username in there in the ExecStart line"
+echo "NOW PLACE YOUR USERNAME IN THE EXECSTART LINE"
 sleep 3
 sudo nano /etc/systemd/system/honey.service
-echo 'place in your ntfy acc'
+echo 'NOW PLACE YOUR NTFY ACCOUNT SUBSCRIPTION THERE'
 sleep 3
 sudo nano /home/$USER/honey.sh
-echo "starting honey service ..."
+echo "ENABLE AND START HONEY SERVICE ..."
 sudo systemctl enable --now honey
 echo """
 
@@ -45,4 +46,5 @@ echo """
                                   
 
 """
+echo "YOU CAN ADD IP ADDRESSES IN THE /home/$USER/honey.sh FILE"
 
