@@ -24,7 +24,7 @@ echo "mark the shell script as executable ..."
 chmod +x honey.sh
 echo "now place your username in there in the ExecStart line"
 sleep 3
-sudo nano /etc/systemd
+sudo nano /etc/systemd/system/honey.service
 echo "starting honey service ..."
 sudo systemctl enable --now honey
 echo """
