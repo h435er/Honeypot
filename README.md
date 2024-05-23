@@ -14,4 +14,7 @@ chmod +x install.sh
 ```
 While it is installing it will make open nano with the ```honey.service``` file. put your hostname in there where it is written "CHANGE_THIS" and exit nano
 # Uninstall
-run the ```uninstall.sh``` programm. all honey files will be removed automatically
+run these commands and honey will be removed completely:
+```
+chmod +x uninstall.sh 
+./uninstall.sh```
