@@ -17,4 +17,11 @@ While it is installing it will make open nano with the ```honey.service``` file.
 run these commands and honey will be removed completely:
 ```
 chmod +x uninstall.sh 
-./uninstall.sh```
+./uninstall.sh
+```
+After this, you can type 
+```
+cd ..
+rm -rf Honeypot
+```
+Now it is removed completely
