@@ -29,6 +29,9 @@ sudo nano /etc/systemd/system/honey.service
 echo 'NOW PLACE YOUR NTFY ACCOUNT SUBSCRIPTION THERE'
 sleep 5
 sudo nano /home/$USER/honey.sh
+echo 'NOW PLACE YOUR USERNAME IN THE PYTHON FILE'
+sleep 5
+sudo nano /home/$USER/honey.py
 echo "ENABLE AND START HONEY SERVICE ..."
 sudo systemctl enable --now honey
 echo """
