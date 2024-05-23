@@ -2,5 +2,5 @@
 import os,time
 
 while True:
-  os.system("bash /home/$USER/honey.sh")
+  os.system("bash /home/CHANGE-THIS/honey.sh")
   time.sleep(60)
