@@ -14,25 +14,57 @@ echo """
  
 """
 
-echo "MOVING THE SERVICE FILE TO  /etc/systemd/system/ ..."
+echo """
+----------------------------------------------------
+MOVING THE SERVICE FILE TO  /etc/systemd/system/ ...
+----------------------------------------------------
+"""
 sudo mv honey.service /etc/systemd/system/
-echo "MOVING THE PY SCRIPT IN THE HOME DIRECTORY ..."
+echo """
+----------------------------------------------
+MOVING THE PY SCRIPT IN THE HOME DIRECTORY ...
+----------------------------------------------
+"""
 sudo mv honey.py /home/$USER/
-echo "MOVING THE SHELL SCRIPT IN THE HOME DIRECTORY ..."
+echo """
+-------------------------------------------------
+MOVING THE SHELL SCRIPT IN THE HOME DIRECTORY ...
+-------------------------------------------------
+"""
 sudo mv honey.sh /home/$USER/
 cd
-echo "MARK THE SHELL SCRIPT AS EXECUTABLE ..."
+echo """
+---------------------------------------
+MARK THE SHELL SCRIPT AS EXECUTABLE ...
+---------------------------------------
+"""
 chmod +x honey.sh
-echo "NOW PLACE YOUR USERNAME IN THE EXECSTART LINE"
+echo """
+---------------------------------------------
+NOW PLACE YOUR USERNAME IN THE EXECSTART LINE
+---------------------------------------------
+"""
 sleep 5
 sudo nano /etc/systemd/system/honey.service
-echo 'NOW PLACE YOUR NTFY ACCOUNT SUBSCRIPTION THERE'
+echo '''
+----------------------------------------------
+NOW PLACE YOUR NTFY ACCOUNT SUBSCRIPTION THERE
+----------------------------------------------
+'''
 sleep 5
 sudo nano /home/$USER/honey.sh
-echo 'NOW PLACE YOUR USERNAME IN THE PYTHON FILE'
+echo '''
+------------------------------------------
+NOW PLACE YOUR USERNAME IN THE PYTHON FILE
+------------------------------------------
+'''
 sleep 5
 sudo nano /home/$USER/honey.py
-echo "ENABLE AND START HONEY SERVICE ..."
+echo """
+----------------------------------
+ENABLE AND START HONEY SERVICE ...
+----------------------------------
+"""
 sudo systemctl enable --now honey
 echo """
 
@@ -49,5 +81,9 @@ echo """
                                   
 
 """
-echo "YOU CAN ADD IP ADDRESSES IN THE /home/$USER/honey.sh FILE"
+echo """
+---------------------------------------------------------
+YOU CAN ADD IP ADDRESSES IN THE /home/$USER/honey.sh FILE
+---------------------------------------------------------
+"""
 
