@@ -14,7 +14,7 @@ cd Honeypot
 chmod +x install.sh
 ./install.sh
 ```
-While it is installing it will make open nano with the ```honey.service``` file. put your hostname in there where it is written "CHANGE_THIS" and exit nano
+While it is installing it will make open nano with a few files wgere you have to put your username and ntfy account in there.you have to put it in where it is written "CHANGE_THIS" and exit nano.
 # Uninstall
 run these commands and honey will be removed completely:
 ```
